@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+        function readNumber() {
+          while (true) {
+            let input = prompt("Введите число:", "");
+
+            if (input === null) { // пользователь нажал "Отмена"
+              return null;
+            }
+
+           let number = +input;
+
+            if (isNaN(number)) { // введено не число
+              alert("Вы ввели не число, попробуйте еще раз.");
+            } else {
+              return number;
+            }
+          }
+        }
+        alert(`Число: ${readNumber()}`);
+      
+	</script>
+</body>
+</html>

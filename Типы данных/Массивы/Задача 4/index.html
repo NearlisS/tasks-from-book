@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Задача 4</title>
+</head>
+<body>
+	<script>
+
+    function sumInput() {
+      let numbers = []; // массив для хранения чисел
+  
+      while (true) {
+        let value = prompt("Введите число:", 0);
+    
+    // прекращаем ввод, если пустая строка или нажата кнопка "Отмена"
+        if (value === "" || value === null || !isFinite(value)) {
+          break;
+        }
+    
+        numbers.push(+value);
+      }
+  
+      let sum = numbers.reduce((total, current) => total + current, 0);
+      return sum;
+    }
+      alert( sumInput() );
+      
+	</script>
+</body>
+</html>

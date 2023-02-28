@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Задача 2</title>
+</head>
+<body>
+	<script>
+
+    function topSalary(salaries) {
+      let maxSalary = 0;
+      let topPaidEmployee = null;
+
+      for (const [name, salary] of Object.entries(salaries)) {
+        if (salary > maxSalary) {
+          maxSalary = salary;
+          topPaidEmployee = name;
+        }
+      }
+
+      return topPaidEmployee;
+    }
+
+
+
+
+      
+	</script>
+</body>
+</html>

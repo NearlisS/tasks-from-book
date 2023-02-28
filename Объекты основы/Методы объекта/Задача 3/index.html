@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+    let ladder = {
+      step: 0,
+      up() {
+        this.step++;
+        return this;
+      },
+    down() {
+        this.step--;
+        return this;
+      },
+      showStep() {
+        alert(this.step);
+        return this;
+      }
+    };
+
+    // использование объекта ladder
+    ladder.up().up().down().showStep().down().showStep();
+
+      
+	</script>
+</body>
+</html>

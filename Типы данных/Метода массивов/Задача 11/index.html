@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Задача 11</title>
+</head>
+<body>
+	<script>
+
+        function getAverageAge(users) {
+          const totalAge = users.reduce((sum, user) => sum + user.age, 0);
+          const averageAge = totalAge / users.length;
+          return averageAge;
+        }
+        let vasya = { name: "Вася", age: 25 };
+        let petya = { name: "Петя", age: 30 };
+        let masha = { name: "Маша", age: 29 };
+
+        let arr = [ vasya, petya, masha ];
+
+        alert( getAverageAge(arr) ); 
+      
+	</script>
+</body>
+</html>

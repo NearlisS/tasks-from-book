@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+    function extractCurrencyValue(str) {
+      return +str.slice(1);
+    }
+    
+    let price1 = "$120";
+    let price2 = "$1234.56";
+
+    alert(extractCurrencyValue(price1));
+    alert(extractCurrencyValue(price2));
+      
+	</script>
+</body>
+</html>

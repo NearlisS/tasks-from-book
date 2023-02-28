@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Задача 2</title>
+</head>
+<body>
+	<script>
+
+    function getSecondsToday() {
+      let now = new Date();
+      let start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      return Math.round((now - start) / 1000);
+    }
+
+    alert(getSecondsToday());
+      
+	</script>
+</body>
+</html>

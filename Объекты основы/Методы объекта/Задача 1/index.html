@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+            function makeUser() {
+              return {
+                name: "John",
+                ref: this
+              };
+            }
+
+            let user = makeUser();
+
+            alert( user.ref.name ); // ошбика
+            
+      
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+    function checkSpam(str) {
+      if (!str) return false; // если строка пустая или не определена, возвращаем false
+      str = str.toLowerCase(); // преобразуем строку в нижний регистр для сравнения
+      return str.includes("viagra") || str.includes("xxx");
+    }
+
+    let str1 = "Buy ViAgRA now";
+    let str2 = "Incredible deals on xxx pills";
+    let str3 = "Check out our latest products";
+
+    alert(checkSpam(str1)); 
+    alert(checkSpam(str2)); 
+    alert(checkSpam(str3));
+
+	</script>
+</body>
+</html>

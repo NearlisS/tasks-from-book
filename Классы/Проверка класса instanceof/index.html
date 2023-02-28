@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+            function A() {}
+            function B() {}
+
+            A.prototype = B.prototype = {};
+
+            let a = new A();
+
+            alert( a instanceof B ); // true
+            // Это происходит потому, что мы установили один и тот же объект в качестве прототипов для A.prototype и B.prototype - пустой объект {}.
+      
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+    function truncate(str, maxlength) {
+      if (str.length > maxlength) {
+        return str.slice(0, maxlength - 1) + "…";
+      } else {
+        return str;
+      }
+    }
+
+    let str1 = "Вот, что мне хотелось бы сказать на эту тему";
+    alert(truncate(str1, 10));
+      
+	</script>
+</body>
+</html>

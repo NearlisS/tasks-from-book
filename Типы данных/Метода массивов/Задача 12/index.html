@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Задача 12</title>
+</head>
+<body>
+	<script>
+
+        function unique(arr) {
+          let result = [];
+          let uniqueValues = {};
+
+          for (let str of arr) {
+            if (!uniqueValues[str]) {
+              result.push(str);
+              uniqueValues[str] = true;
+            }
+          }
+
+          return result;
+        }
+        let strings = ["кришна", "кришна", "харе", "харе",
+         "харе", "харе", "кришна", "кришна", ":-O"
+        ];
+
+        alert( unique(strings) );
+
+      
+	</script>
+</body>
+</html>

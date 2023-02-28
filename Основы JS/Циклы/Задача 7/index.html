@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Задача 7</title>
+</head>
+<body>
+	<script>	
+	"use strict";
+		function isPrime(number) {
+		  for (let i = 2; i < number; i++) {
+		    if (number % i === 0) {
+		      return false;
+		    }
+		  }
+ 	 	return true;
+		}
+
+		function printPrimes(n) {
+	  	for (let i = 2; i <= n; i++) {
+	    	if (isPrime(i)) {
+	      alert(i);
+	    }
+		  }
+		}
+		
+		printPrimes(10);
+	</script>
+</body>
+</html> 	

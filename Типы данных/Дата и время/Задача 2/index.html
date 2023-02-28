@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Задача 2</title>
+</head>
+<body>
+	<script>
+
+    function getWeekDay(date) {
+      const options = { weekday: 'short' };
+      const weekday = date.toLocaleString('ru-RU', options);
+      return weekday.slice(0, 2).toUpperCase();
+    }
+
+    let date = new Date(2012, 0, 3);  // 3 января 2012 года
+    alert( getWeekDay(date) ); 
+         
+	</script>
+</body>
+</html>

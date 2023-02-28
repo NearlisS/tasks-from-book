@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Задача 2</title>
+</head>
+<body>
+	<script>
+
+    function getLocalDay(date) {
+      let dayOfWeek = date.getDay();
+      if (dayOfWeek === 7) {
+        dayOfWeek = 0;
+      }
+      return dayOfWeek;
+    }
+
+    let date = new Date(2012, 0, 3);  // 3 января 2012 года
+    alert( getLocalDay(date) );
+     
+	</script>
+</body>
+</html>

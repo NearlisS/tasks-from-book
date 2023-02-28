@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+            let calculator = {
+              // метод для чтения значений
+              read() {
+                this.value1 = +prompt('Введите первое значение:', 0);
+                this.value2 = +prompt('Введите второе значение:', 0);
+              },
+
+              // метод для суммирования значений
+              sum() {
+                return this.value1 + this.value2;
+              },
+
+             // метод для умножения значений
+              mul() {
+                return this.value1 * this.value2;
+              }
+            };
+
+            // использование объекта calculator
+            calculator.read();
+            alert( calculator.sum() );
+            alert( calculator.mul() );
+
+      
+	</script>
+</body>
+</html>

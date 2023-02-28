@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+
+		let user = {
+		  name: "Василий Иванович",
+		  age: 35
+		};
+
+		let userJSON = JSON.stringify(user);
+		let userCopy = JSON.parse(userJSON);
+
+		alert(userCopy); // {name: "Василий Иванович", age: 35}
+
+	</script>
+</body>
+</html>
