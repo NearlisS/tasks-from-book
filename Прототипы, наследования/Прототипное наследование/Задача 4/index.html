@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+    
+    let hamster = {
+      eat(food) {
+        if (!this.stomach) this.stomach = []; // создаем новый массив только если он еще не создан
+        this.stomach.push(food);
+      }
+    };
+
+    let speedy = {
+      __proto__: hamster,
+      stomach: [] // создаем пустой массив в контексте объекта
+    };
+
+    let lazy = {
+      __proto__: hamster,
+      stomach: [] // создаем пустой массив в контексте объекта
+    };
+
+    speedy.eat("apple");
+    alert( speedy.stomach ); // apple
+    alert( lazy.stomach ); // пусто
+
+      
+	</script>
+</body>
+</html>

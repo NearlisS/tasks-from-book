@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+    
+    function sum(a) {
+
+    let currentSum = a;
+
+    function addNextNumber(b) {
+      currentSum += b;
+      return addNextNumber;
+    }
+
+    addNextNumber.toString = function() {
+      return currentSum;
+    };
+
+    return addNextNumber;
+    }
+
+    alert(sum(1)(2)); // 3
+    alert(sum(1)(2)(3)); // 6
+    alert(sum(5)(-1)(2)); // 6
+    alert(sum(6)(-1)(-2)(-3)); // 0
+    alert(sum(0)(1)(2)(3)(4)(5)); // 15
+
+    
+	</script>
+</body>
+</html>

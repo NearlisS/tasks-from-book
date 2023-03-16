@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+    
+    let head = {
+      glasses: 1
+    };
+
+    let table = {
+      pen: 3,
+      __proto__: head
+    };
+
+    let bed = {
+      sheet: 1,
+      pillow: 2,
+      __proto__: table
+    };
+
+    let pockets = {
+      money: 2000,
+      __proto__: bed
+    };
+
+    alert( pockets.pen ); // 3
+    alert( bed.glasses ); // 1
+    alert( table.money ); // undefined
+/*
+    Чтобы получить значение свойства glasses, быстрее использовать head.glasses, потому что в этом случае поиск будет произведен непосредственно в объекте head. Если использовать pockets.glasses,
+    то сначала будет произведен поиск в объекте pockets, затем в объекте bed (его прототипе), затем в объекте table (его прототипе) и, наконец, в объекте head (его прототипе).
+*/
+      
+	</script>
+</body>
+</html>

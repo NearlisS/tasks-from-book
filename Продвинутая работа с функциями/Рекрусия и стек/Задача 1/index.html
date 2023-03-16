@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+    function sumTo(n) { // Цикл
+      let sum = 0;
+      for (let i = 1; i <= n; i++) {
+        sum += i;
+      }
+      return sum;
+    }
+  
+    function sumTo(n) { //Рекрусия. При n = 100000 программа не выполняется.
+      if (n === 1) {
+        return 1;
+      } else {
+        return n + sumTo(n - 1);
+      }
+    }
+    
+    function sumTo(n) { // Арифмитическая поргрессия 
+      return (n * (n + 1)) / 2;
+    }
+    
+
+	</script>
+</body>
+</html>

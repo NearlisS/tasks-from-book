@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Задача 1</title>
+</head>
+<body>
+	<script>
+    
+    function delay(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    delay(3000).then(() => alert('выполнилось через 3 секунды'));
+
+	</script>
+</body>
+</html>

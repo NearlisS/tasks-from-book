@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Задача 5</title>
+</head>
+<body>
+	<script>
+    
+    function inBetween(a, b) {
+      return function(x) {
+        return x >= a && x <= b;
+      };
+    }
+
+    function inArray(arr) {
+      return function(x) {
+        return arr.includes(x);
+      };
+    }
+
+    let arr = [1, 2, 3, 4, 5, 6, 7];
+
+
+    let filteredArr = arr.filter(inBetween(3, 6));
+    alert(filteredArr); // [3, 4, 5, 6]
+
+    filteredArr = arr.filter(inArray([1, 2, 3]));
+    alert(filteredArr); // [1, 2, 3]
+
+
+      
+	</script>
+</body>
+</html>
